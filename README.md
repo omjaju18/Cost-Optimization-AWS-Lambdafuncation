@@ -1,7 +1,3 @@
-Here's an example of how you can structure a **README** for your Lambda function that identifies and deletes stale EBS snapshots:
-
----
-
 # AWS Lambda Function: Identifying Stale EBS Snapshots for Cost Optimization
 
 This Lambda function is designed to identify and delete stale EBS snapshots in your AWS environment. Stale snapshots are EBS snapshots that are no longer associated with any active EC2 instance. By deleting these unused snapshots, you can reduce your AWS storage costs.
@@ -80,6 +76,20 @@ Ensure your Lambda function has the following permissions attached to its IAM ro
 - If you encounter issues with `ec2:DescribeVolumes`, verify that the volumes associated with snapshots still exist.
 - You can test the function with different EC2 and EBS configurations to ensure it works as expected.
 
+## Outputs
+
+
+<img width="958" alt="Snapshot Available" src="https://github.com/user-attachments/assets/9d9ecbfe-8239-4948-83d5-e5c6e324e18b" />
+
+<img width="958" alt="Deleted Stale Snapshot" src="https://github.com/user-attachments/assets/2559954b-27f0-4a7e-9063-2a0e9b569f6f" />
+
+<img width="959" alt="Deleted Stale Snapshot in EC2 png " src="https://github.com/user-attachments/assets/ab463d0d-8344-44b7-84f8-fe317c988efe" />
+
+<img width="959" alt="Snapshot and volume actve" src="https://github.com/user-attachments/assets/77077584-e014-4c6e-8656-bdef127df1c6" />
+
+<img width="959" alt="Deleted Stale Snapshot which is attached to Volume but no active instances" src="https://github.com/user-attachments/assets/3efdacf1-c67c-4bfa-a273-6f92fa1a5d4a" />
+
+<img width="959" alt="Snapshot got deleted " src="https://github.com/user-attachments/assets/b0eea39f-6c38-4077-b709-c283c8526035" />
 
 
 ## Conclusion
